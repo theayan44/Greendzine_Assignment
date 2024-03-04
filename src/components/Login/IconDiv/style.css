@@ -1,0 +1,11 @@
+.icon-div>img {
+    width: 90px;
+    height: 90px;
+}
+
+.icon-div>h2 {
+    color: #36A546CC;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
