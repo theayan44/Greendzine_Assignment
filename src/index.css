@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -31,10 +31,11 @@ code {
   gap: 4rem;
 }
 
-.dashboard-page-content {
-  color: red;
+.employee-list-container {
+  background-color: #000000;
 }
 
-.employee-list-container {
-  width: 100vw;
+
+::-webkit-scrollbar {
+  display: none;
 }

@@ -1,7 +1,12 @@
 .employee-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+    top: 0px;
+    margin-top: 260px;
+    margin-bottom: 100px;
+    /* overflow: scroll; */
 }

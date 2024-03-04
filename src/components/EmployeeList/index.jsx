@@ -6,9 +6,9 @@ const EmployeeList = ({ data }) => {
     return (
         <div className="employee-list">
             {
-                data.map((item, idx) => {
-                    <Card key={idx} data={item} />
-                })
+                data.map((item, idx) => (
+                    <Card key={idx} employee={item} slno={idx + 1} />
+                ))
             }
         </div>
     )

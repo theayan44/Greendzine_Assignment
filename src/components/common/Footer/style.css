@@ -33,6 +33,9 @@
 }
 
 @media only screen and (max-width: 500px) {
+    .footer {
+        height: 60px;
+    }
 
     .footer img {
         height: 30px;

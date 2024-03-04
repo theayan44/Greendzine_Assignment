@@ -4,6 +4,7 @@ import Footer from "../components/common/Footer";
 import MoptroIconDiv from "../components/common/MoptroIconDiv";
 import SearchBar from "../components/common/SearchBar";
 import UserIconDiv from "../components/common/UserIconDiv";
+import { useNavigate } from "react-router-dom";
 
 const EmployeeListPage = () => {
     const [employeeData, setEmployeeData] = useState([
@@ -71,7 +72,14 @@ const EmployeeListPage = () => {
     const [searchValue, setSearchValue] = useState("");
     const [searchData, setSearchData] = useState([]);
 
+    const navigate = useNavigate();
+
     useEffect(() => {
+        if (localStorage.getItem("loginCredentials") === null) {
+            // navigate directly to login
+            navigate("/login", { replace: true });
+        }
+
         if (employeeData.length > 0) {
             setSearchData(employeeData.filter((item) => (
                 item.name.toLowerCase().includes(searchValue.toLowerCase())
